@@ -1,6 +1,18 @@
 <?php
-$servidor = '127.0.0.1';
-$bd = '';
-$usuario_mysql = 'root1234';
-$clave_mysql = '';
+
+$host = "localhost";
+$usuario = "root";
+$clave = "";
+$bd = "tienda";
+
+
+$conexion = mysqli_connect($host, $usuario, $clave, $bd);
+
+if($conexion){
+    echo "conectado correctamente";
+    
+}else{
+    echo "no se puede conectar";
+}
+
 ?>
